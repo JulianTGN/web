@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/imgs/bee.png" type="image/ico">
+<meta charset="UTF-8">
+<title>Contacto Mieles Liberatore</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Descubre la exquisitez de la miel en Mieles Liberatore. Ofrecemos una selección única de mieles puras y naturales, recolectadas con cuidado y pasión.¡Explora nuestra tienda en línea y sumérgete en el dulce mundo de Mieles Liberatore!">
+<meta name="keywords" content="miel, mieles Liberatore, miel pura, miel natural, variedades de miel, tienda de miel, miel floral, miel premium, productos apícolas, comprar miel en línea"/>
+<meta name="author" content="Ferrán Calabuig" />
+<meta name="copyright" content="Ferrán Calabuig" />
+<meta http-equiv="cache-control" content="no-cache"/>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <img class="logo" src="imgs/" alt="">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/nav-var/historia.html">Historia</a></li>
+                        <li><a href="/nav-var/catalogo.html">Catálogo</a></li>
+                        <li><a href="/nav-var/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>    
+        </div>
+
+        <div class="banner">
+            <img src="/imgs/covered.png" width="100%" height="250px">
+        </div>
+    </div>  
+
+    <div class="container-contactos">
+        <!--Encuéntranos-->
+
+        <div class="columna">
+        <h1> Contacto</h1>    
+        <h3>Visítanos</h3>
+         <ul>
+            <li>Lunes a Viernes de 9:00 am a 19:00 am</li>
+            <li>Sábados de 9:00 a 12:00 (sólo recogidas).</li>
+         </ul>
+            
+
+        <h4>Dirección</h4>
+        <p>Finca Liberatore; Camino de la Dulzura; km 74; T-203</p>
+        <p> 43764 - El Catllar, España</p>
+
+        <h4>Teléfono</h4>
+        <p>+34 675 321 234</p>
+
+        <h4>Email</h4>
+        <p>mielesliberatore@gmail.com</p>
+        </div>
+
+        <!--Formulario-->
+        <div class="columna">
+            <form id="formulario" action="/phpDocs/sample.php" method="post">
+
+                <h2>Encarga tu pedido</h2>
+                <fieldset> 
+                    <legend>Datos Personales</legend>
+
+                    <br>
+                    <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre"> <label for="apellido">Apellidos:</label> <input type="text" id="apellido" name="apellido"> <br>
+
+                    <br>
+                    <label for="email">Email:</label><input type="email" id="email" name="email">
+                    <label for="tlf">Teléfono:</label> <input type="text" id="tlf" name="tlf"> <br>
+
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles de la Reserva</legend>
+
+                    <br>    
+                    <label>Miel a Reservar</label> 
+                    <select class="desplegable">
+                      <option value="" selected="selected">----</option> 
+                      <option value="lavanda">Miel de Lavanda</option>
+                      <option value="azahar">Miel de Azahar</option>
+                      <option value="romero">Miel de Romero</option>
+                    </select>
+
+                    <label for="cantidad">Cantidad:</label><input type="number" name="cantidad" min="1" max="10"> <br> <br>
+                    <label for="fecha">Fecha deseada para la recogida: </label> <input type="date" name="fecha" min="2023-12-07"> <br><br>
+                    
+                    Para pedidos de cantidades más grandes o personalizados, por favor llámanos y te atenderemos directamente. 
+                    
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Confirmación del Encargo</legend>
+
+                    <br>
+                    <label for="observaciones">Observaciones:</label> <br> <textarea id="observaciones" name="observaciones" cols="45" rows="3"> </textarea> <br>
+                    
+                    <br>
+                    
+                    <input type="checkbox" name="email_list" value=""> <label for="email_list">Sí, me gustaría inscribirme en vuestra newsletter y recibir (dulces) ofertas y información sobre futuros eventos.</label><br><br>
+                    <input type="checkbox" name="pdp" value="" required="required"> <label for="pdp">He leído y acepto la cláusula de información sobre </label><em><a href="/nav-var/politica.html"> Protección de Datos.</a></em><br><br>
+
+                    Al completar este formulario, recibirás en tu email una confirmación de la reserva. <br>
+
+                    <br>
+                    <label for="submit"></label> <input type="submit" id="submit" name="submit" value="Realizar Pedido"> 
+                    <label for="reset"></label> <input type="reset" id="reset" name="reset" value="Restablecer Formulario"> <br>
+
+
+                </fieldset>
+
+            </form>
+        </div>
+    </div> 
+    
+    <footer class="footer">
+        <p>© Mieles Liberatore, S.L.  2020-2023 · Todos los derechos reservados Development & Designed by: los makis de DAW1 </p>
+        <p class="privacidad"><a href="/nav-var/politica.html">Política de Privacidad</a> | Envíos y devoluciones  | Aviso legal | Políticas de cookies</p>
+    </footer> 
+</body>
+</html>

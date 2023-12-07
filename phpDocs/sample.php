@@ -1,0 +1,1 @@
+<!--Documento PhP de muestra-->
